@@ -99,14 +99,13 @@ $thirdColor = #178C7F
   color: #010002;
   vertical-align: top;
   display: inline-block;
-  padding-top: 9px;
   cursor: pointer;
 }
 .page__center__social-icons__link.-mail {
   padding-top: 0;
   font-size: 45px;
   font-weight: 700;
-  line-height: 1.95;
+  line-height: 1.8;
 }
 .page__center__social-icons__link:hover {
   text-decoration: none;
@@ -115,11 +114,11 @@ $thirdColor = #178C7F
   color: #6AE368;
   transition: 0.3s all ease;
 }
-.icon-github:hover {
+.icon-github-circled:hover {
   color: rgba(1, 0, 2, 0.7);  
   transition: 0.3s all ease;
 }
-.icon-linkedin:hover {
+.icon-linkedin-squared:hover {
   color: #4875B4;  
   transition: 0.3s all ease;
 }
