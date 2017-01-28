@@ -36,7 +36,7 @@ $thirdColor = #178C7F
   min-height: 400px;
   width: 500px;
   max-width: 80vw;
-  min-width: 320px;
+  min-width: 280px;
   margin: auto;
   text-align: left;
   margin-left: calc(50vw - 180px);
@@ -51,31 +51,31 @@ $thirdColor = #178C7F
   opacity: 0.7;
   line-height: 0.8;
 }
-.page__center__title.-m,
-.page__center__title.-q,
-.page__center__title.-e,
-.page__center__title.-l,
-.page__center__title.-m {
+.page__center__title__letter.-m,
+.page__center__title__letter.-q,
+.page__center__title__letter.-e,
+.page__center__title__letter.-l,
+.page__center__title__letter.-m {
   color: #010002;
   opacity: 0.86;
   letter-spacing: -12px;
   -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  transition: 0.4s all ease;
 }
-.page__center__title.-a,
-.page__center__title.-i,
-.page__center__title.-u,
-.page__center__title.-t {
+.page__center__title__letter.-a,
+.page__center__title__letter.-i,
+.page__center__title__letter.-u,
+.page__center__title__letter.-t {
   color: #010002;
   opacity: 0.97;
   letter-spacing: -16px;
   -webkit-transition: 0.15s all ease;
-  transition: 0.15s all ease;
+  transition: 0.3s all ease;
 }
-.page__center__title.-f,
-.page__center__title.-r,
-.page__center__title.-o,
-.page__center__title.-r {
+.page__center__title__letter.-f,
+.page__center__title__letter.-r,
+.page__center__title__letter.-o,
+.page__center__title__letter.-r {
   color: #010002;
   opacity: 0.8;
   letter-spacing: -14px;
@@ -86,27 +86,39 @@ $thirdColor = #178C7F
 .page__center__title__ferrer,
 .page__center__title__llompart {
   cursor: none;
+  height: 47px;
+  display: inline-block;
+  width: 100%;
 }
-.page__center__title__miquel:hover .page__center__title {
+.page__center__title__miquel:hover .page__center__title__letter {
   color: #2399D6;
   opacity: 0.8;
   cursor: none;
 }
-.page__center__title__ferrer:hover .page__center__title {
+.page__center__title__miquel:hover .page__center__title__letter:hover {
+  opacity: 1;
+}
+.page__center__title__ferrer:hover .page__center__title__letter {
   color: #2D9FB6;
   opacity: 0.8;
   cursor: none;
 }
-.page__center__title__llompart:hover .page__center__title {
+.page__center__title__ferrer:hover .page__center__title__letter:hover {
+opacity: 1;
+}
+.page__center__title__llompart:hover .page__center__title__letter {
   color: #178C7F;
   opacity: 0.8;
   cursor: none;
+}
+.page__center__title__llompart:hover .page__center__title__letter:hover {
+  opacity: 1;
 }
 .page__center__subtitle {
   font-size: 30px;
   font-weight: 500;
   letter-spacing: -2px;
-  color: rgba(1, 0, 2, 0.7);
+  color: rgba(1, 0, 2, 0.9);
   text-align: left;
   width: 100%;
   line-height: 1.2;
@@ -124,15 +136,10 @@ $thirdColor = #178C7F
 .page__center__social-icons__link {
   text-decoration: none;
   color: #010002;
+  opacity: 0.8;
   vertical-align: top;
   display: inline-block;
   cursor: pointer;
-}
-.page__center__social-icons__link.-mail {
-  padding-top: 0;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.8;
 }
 .page__center__social-icons__link:hover {
   text-decoration: none;
@@ -144,13 +151,16 @@ transition: 0.3s all ease;
 .icon-spotify:hover {
   color: #6AE368;
 }
-.icon-github-circled:hover {
+.icon-github:hover {
   color: rgba(1, 0, 2, 0.5);  
 }
-.icon-linkedin-squared:hover {
+.icon-linkedin:hover {
   color: #4875B4;  
 }
-.icon-mail:hover {
+.icon-twitter:hover {
+  color: #1dcaff;  
+}
+.icon-email:hover {
   color: #2D9FB6;
 }
 .page__footer {
@@ -215,15 +225,15 @@ transition: 0.3s all ease;
   .page__center {
     margin: auto;   
   }
-  .page__center__title__miquel .page__center__title {
+  .page__center__title__miquel .page__center__title__letter {
     color: #2399D6;
     opacity: 0.89;
   }
-  .page__center__title__ferrer .page__center__title {
+  .page__center__title__ferrer .page__center__title__letter {
     color: #2D9FB6;
     opacity: 0.87;
   }
-  .page__center__title__llompart .page__center__title {
+  .page__center__title__llompart .page__center__title__letter {
     color: #178C7F;
     opacity: 0.85;
   }
