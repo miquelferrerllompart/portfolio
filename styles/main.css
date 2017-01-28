@@ -21,18 +21,19 @@ $thirdColor = #178C7F
   flex-direction: column;
   height: 96vh;
   width: 500px;
-  max-width: 90vw;
+  max-width: 80vw;
   margin: auto;
   text-align: left;
   margin-left: calc(50vw - 180px);
 }
 .page__center__title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
-  letter-spacing: -10px;
+  letter-spacing: -13px;
   text-transform: uppercase;
   width: 100%;
-  color: rgba(1, 0, 2, 0.7);
+  color: #010002;
+  opacity: 0.7;
   cursor: default;
 }
 .page__center__title.-m,
@@ -40,50 +41,36 @@ $thirdColor = #178C7F
 .page__center__title.-e,
 .page__center__title.-l,
 .page__center__title.-m {
-  color: rgba(1, 0, 2, 0.6);
+  color: #010002;
+  opacity: 0.8;
   letter-spacing: -14px;
-  transition: 0.3s all ease;
+  transition: 0.5s all ease;
 }
 .page__center__title.-a,
 .page__center__title.-i,
 .page__center__title.-u,
 .page__center__title.-t {
-  color: rgba(1, 0, 2, 0.73);
-  letter-spacing: -13px;
-  transition: 0.3s all ease;
+  color: #010002;
+  opacity: 0.93;
+  letter-spacing: -18px;
+  transition: 0.15s all ease;
 }
 .page__center__title.-f,
 .page__center__title.-r,
 .page__center__title.-o,
 .page__center__title.-r {
-  color: rgba(1, 0, 2, 0.65);
+  color: #010002;
+  opacity: 0.75;
   letter-spacing: -16px;
-  transition: 0.3s all ease;
+  transition: 0.35s all ease;
 }
-.page__center__title.-m:hover,
-.page__center__title.-i:hover,
-.page__center__title.-q:hover,
-.page__center__title.-u:hover,
-.page__center__title.-e:hover,
-.page__center__title.-l:hover {
+.page__center__title__miquel:hover .page__center__title {
   color: #2399D6;
 }
-.page__center__title.-f:hover,
-.page__center__title.-e:hover,
-.page__center__title.-r:hover,
-.page__center__title.-r:hover,
-.page__center__title.-e:hover,
-.page__center__title.-r:hover {
+.page__center__title__ferrer:hover .page__center__title {
   color: #2D9FB6;
 }
-.page__center__title.-l:hover,
-.page__center__title.-l:hover,
-.page__center__title.-o:hover,
-.page__center__title.-m:hover,
-.page__center__title.-p:hover,
-.page__center__title.-a:hover,
-.page__center__title.-r:hover,
-.page__center__title.-t:hover {
+.page__center__title__llompart:hover .page__center__title {
   color: #178C7F;
 }
 .page__center__subtitle {
@@ -165,4 +152,37 @@ $thirdColor = #178C7F
 .page__footer__third-color {
  background-color: #178C7F;
  left: 50vw;
+}
+.page__footer:hover .page__footer__first-color {
+  width: 100vw;
+  left: 0;
+  opacity: 0.5;
+  transition: all ease 3s;
+}
+.page__footer:hover .page__footer__second-color {
+  width: 100vw;
+  left: 0;
+  opacity: 0.5;
+  transition: all ease-in-out 4s;
+}
+.page__footer:hover .page__footer__third-color {
+  width: 100vw;
+  left: 0;
+  opacity: 0.5;
+  transition: all ease 2s;
+}
+@media(max-width: 600px) {
+  .page__center {
+    margin: auto;   
+  }
+}
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
 }
