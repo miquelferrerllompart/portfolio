@@ -11,6 +11,7 @@ $thirdColor = #178C7F
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   overflow-x: hidden;
   text-align: center;
+  min-height: 400px;
   height: 100vh;
   user-select: none;
 }
@@ -20,6 +21,7 @@ $thirdColor = #178C7F
   align-items: center;
   flex-direction: column;
   height: 96vh;
+  min-height: 400px;
   width: 500px;
   max-width: 80vw;
   margin: auto;
