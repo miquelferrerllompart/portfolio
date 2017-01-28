@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "bliss";
+  src:url("../assets/fonts/bliss.eot");
+  src:url("../assets/fonts/bliss.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/bliss.woff") format("woff"),
+    url("../assets/fonts/bliss.ttf") format("truetype"),
+    url("../assets/fonts/bliss.svg#bliss") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "bliss" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="bliss-"]:before,
+[class*=" bliss-"]:before {
+  font-family: "bliss" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bliss-social-twitter:before {
+  content: "\75";
+}
+.bliss-social-whatsapp:before {
+  content: "\76";
+}
+.bliss-social-linkedin:before {
+  content: "\77";
+}
+.bliss-social-skype:before {
+  content: "\78";
+}
+.bliss-ios-email:before {
+  content: "\79";
+}
