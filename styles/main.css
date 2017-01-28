@@ -44,7 +44,7 @@ $thirdColor = #178C7F
 .page__center__title.-l,
 .page__center__title.-m {
   color: #010002;
-  opacity: 0.8;
+  opacity: 0.9;
   letter-spacing: -14px;
   transition: 0.5s all ease;
 }
@@ -62,18 +62,21 @@ $thirdColor = #178C7F
 .page__center__title.-o,
 .page__center__title.-r {
   color: #010002;
-  opacity: 0.75;
+  opacity: 0.85;
   letter-spacing: -16px;
   transition: 0.35s all ease;
 }
 .page__center__title__miquel:hover .page__center__title {
   color: #2399D6;
+  opacity: 0.8;
 }
 .page__center__title__ferrer:hover .page__center__title {
   color: #2D9FB6;
+  opacity: 0.8;
 }
 .page__center__title__llompart:hover .page__center__title {
   color: #178C7F;
+  opacity: 0.8;
 }
 .page__center__subtitle {
   font-size: 28px;
@@ -176,14 +179,16 @@ $thirdColor = #178C7F
   .page__center {
     margin: auto;   
   }
-}
-@keyframes slideOutDown {
-  from {
-    transform: translate3d(0, 0, 0);
+  .page__center__title__miquel .page__center__title {
+    color: #2399D6;
+    opacity: 0.89;
   }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(0, 100%, 0);
+  .page__center__title__ferrer .page__center__title {
+    color: #2D9FB6;
+    opacity: 0.87;
+  }
+  .page__center__title__llompart .page__center__title {
+    color: #178C7F;
+    opacity: 0.85;
   }
 }
