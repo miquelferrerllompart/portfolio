@@ -211,7 +211,7 @@ transition: 0.3s all ease;
   left: 0;
   opacity: 0.5;
 }
-@media(max-width: 600px) {
+@media(max-width: 800px) {
   .page__center {
     margin: auto;   
   }
