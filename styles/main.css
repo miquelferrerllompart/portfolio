@@ -13,13 +13,25 @@ $thirdColor = #178C7F
   text-align: center;
   min-height: 400px;
   height: 100vh;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .page__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 96vh;
   min-height: 400px;
   width: 500px;
@@ -46,6 +58,7 @@ $thirdColor = #178C7F
   color: #010002;
   opacity: 0.9;
   letter-spacing: -14px;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 .page__center__title.-a,
@@ -55,6 +68,7 @@ $thirdColor = #178C7F
   color: #010002;
   opacity: 0.93;
   letter-spacing: -18px;
+  -webkit-transition: 0.15s all ease;
   transition: 0.15s all ease;
 }
 .page__center__title.-f,
@@ -64,6 +78,7 @@ $thirdColor = #178C7F
   color: #010002;
   opacity: 0.85;
   letter-spacing: -16px;
+  -webkit-transition: 0.35s all ease;
   transition: 0.35s all ease;
 }
 .page__center__title__miquel:hover .page__center__title {
@@ -113,21 +128,21 @@ $thirdColor = #178C7F
 .page__center__social-icons__link:hover {
   text-decoration: none;
 }
+.page__center__social-icons__link__icon {
+-webkit-transition: 0.3s all ease;
+transition: 0.3s all ease;  
+}
 .icon-spotify:hover {
   color: #6AE368;
-  transition: 0.3s all ease;
 }
 .icon-github-circled:hover {
   color: rgba(1, 0, 2, 0.7);  
-  transition: 0.3s all ease;
 }
 .icon-linkedin-squared:hover {
   color: #4875B4;  
-  transition: 0.3s all ease;
 }
 .icon-mail:hover {
   color: #2D9FB6;
-  transition: 0.3s all ease;
 }
 .page__footer {
   height: 3%;
@@ -148,32 +163,35 @@ $thirdColor = #178C7F
 .page__footer__first-color {
  background-color: #2399D6;
  left: 0vw;
+ -webkit-transition: all ease 3s;
+ transition: all ease 3s;
 }
 .page__footer__second-color {
  background-color: #2D9FB6;
  left: 25vw;
+ -webkit-transition: all ease-in-out 4s;
+ transition: all ease-in-out 4s;
 }
 .page__footer__third-color {
  background-color: #178C7F;
  left: 50vw;
+ -webkit-transition: all ease 2s;
+ transition: all ease 2s;
 }
 .page__footer:hover .page__footer__first-color {
   width: 100vw;
   left: 0;
   opacity: 0.5;
-  transition: all ease 3s;
 }
 .page__footer:hover .page__footer__second-color {
   width: 100vw;
   left: 0;
   opacity: 0.5;
-  transition: all ease-in-out 4s;
 }
 .page__footer:hover .page__footer__third-color {
   width: 100vw;
   left: 0;
   opacity: 0.5;
-  transition: all ease 2s;
 }
 @media(max-width: 600px) {
   .page__center {
