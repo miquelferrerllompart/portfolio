@@ -1,5 +1,7 @@
 {
- "name": "App",
+ "short_name": "Miquel Ferrer Llompart",
+ "name": "Miquel Ferrer LLompart",
+ "description": "Front-end, focus on Product",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -37,5 +39,10 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+  "start_url": "/",
+  "background_color": "#FEFEFE",
+  "theme_color": "#FEFEFE",
+  "display": "standalone",
+  "orientation": "landscape"
 }
